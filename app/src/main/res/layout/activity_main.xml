@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_alignParentTop="true"/>
+
+    <Button
+        android:id="@+id/startScanningButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/viewPager"
+        android:layout_centerHorizontal="true"
+        android:text="Start Scanning"
+        android:background="?attr/colorPrimary"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="16dp"/>
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/searchView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/startScanningButton"
+        android:layout_marginTop="16dp"
+        android:queryHint="Search product by name"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/searchView"
+        android:padding="16dp"/>
+
+</RelativeLayout>

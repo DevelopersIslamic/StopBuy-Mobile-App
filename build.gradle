@@ -1,0 +1,22 @@
+// Archivo: build.gradle (Project Level)
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:7.2.1'  // Asegúrate de tener una versión compatible
+        classpath 'com.google.gms:google-services:4.3.10'
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

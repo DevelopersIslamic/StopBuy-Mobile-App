@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">StopBuy</string>
+    <string name="start_scanning">Start Scanning</string>
+    <string name="search_hint">Search product by name</string>
+    <string name="boycotted_product_detected">Boycotted product detected: %1$s</string>
+    <string name="product_not_boycotted">Product not boycotted: %1$s</string>
+    <string name="product_not_found">Product not found: %1$s</string>
+    <string name="image_desc">Image in slider</string>
+</resources>
